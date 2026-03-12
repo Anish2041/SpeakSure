@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpeakSure AI - Select Interview</title>
+    <link rel="stylesheet" href="First_Page/style.css">
+    <script src="First_Page/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <div class="top-bar">
+        <div class="logo-area">
+            <div class="logo-icon">💬</div>
+            <div class="logo-text">SpeakSure AI</div>
+        </div>
+    </div>
+
+  
+    <div class="progress-section">
+        <div class="progress-container">
+            <div class="progress-active"></div>
+            <span class="progress-text">Step 1 of 3</span>
+            <div class="progress-inactive"></div>
+        </div>
+    </div>
+
+  
+    <div class="welcome-strip">
+        <div class="welcome-text">
+            👋 <strong>Welcome, User!</strong> Choose the interview type you are preparing:
+        </div>
+    </div>
+
+   
+    <div class="cards-container" data-type="Technical Interview">
+
+        <div class="card" data-type="Technical Interview">
+            <h3>Technical Interview</h3>
+            <p>Coding, DSA, Core Subjects</p>
+            <span class="badge blue">Intermediate</span>
+        </div>
+
+        <div class="card"data-type="HR Interview">
+            <h3>HR Interview</h3>
+            <p>Behavioral, Strengths, Weakness</p>
+            <span class="badge green">Beginner</span>
+        </div>
+
+        <div class="card"data-type="Management Interview">
+            <h3>Management Interview</h3>
+            <p>Leadership, Case Studies</p>
+            <span class="badge dark">Advanced</span>
+        </div>
+
+        <div class="card" data-type="Company-Specific Interview">
+            <h3>Company-Specific Interview</h3>
+            <p>TCS, Infosys, Google, etc.</p>
+            <span class="badge orange">1–3 Years</span>
+        </div>
+
+        <div class="card" data-type="Campus Placement">
+            <h3>Campus Placement</h3>
+            <p>Aptitude + Technical + HR</p>
+            <span class="badge blue">Fresher</span>
+        </div>
+
+        <div class="card" data-type="AI Suggest">
+            <h3>Let AI Suggest</h3>
+            <p>AI Recommends Best Fit For You</p>
+            <span class="badge dark">Smart Choice</span>
+        </div>
+
+    </div>
+
+   
+    <div class="filters">
+
+        <div class="filter-group">
+            <div class="filter-title">Experience Level:</div>
+            <button class="filter-btn">Fresher</button>
+            <button class="filter-btn">1–3 Years</button>
+            <button class="filter-btn">3+ Years</button>
+        </div>
+
+        <div class="filter-group">
+            <div class="filter-title">Industry:</div>
+            <button class="filter-btn">IT</button>
+            <button class="filter-btn">Engineering</button>
+            <button class="filter-btn">Finance</button>
+            <button class="filter-btn">Marketing</button>
+        </div>
+
+    </div>
+
+   
+   <div class="continue-section">
+
+    <p id="errorMessage" class="error-message"></p>
+
+    <button class="continue-btn" id="continueBtn">Continue ➜</button>
+</div>
+
+</body>
+</html>

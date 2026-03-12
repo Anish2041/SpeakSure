@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI';
+    background: linear-gradient(to right, #dbeafe, #e9d5ff);
+    text-align: center;
+}
+
+.report-container {
+    padding: 40px;
+}
+
+.score-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.analytics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: none;
+    background: linear-gradient(to right, #4f8dfd, #6c63ff);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#scoreFill {
+    height: 100%;
+    width: 0%;
+    background: #4f8dfd;
+    transition: width 1s ease-in-out;
+}
+#aiSummary {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #1e293b;
+    margin-top: 10px;
+}

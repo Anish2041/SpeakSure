@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpeakSure AI - Final Report</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+<div class="report-container">
+
+    <h1>🧠 SpeakSure AI - Interview Report</h1>
+
+    <div class="score-box">
+        <h2>Overall Confidence Score</h2>
+        <h3 id="finalScore">0%</h3>
+        <div class="progress-bar">
+            <div id="scoreFill"></div>
+        </div>
+    </div>
+
+    <div class="analytics">
+        <div class="card">
+            <h3>Emotion Stability</h3>
+            <p id="emotionResult">Analyzing...</p>
+        </div>
+
+        <div class="card">
+            <h3>Voice Strength</h3>
+            <p id="voiceResult">Analyzing...</p>
+        </div>
+
+        <div class="card">
+            <h3>Technical Clarity</h3>
+            <p id="techResult">Analyzing...</p>
+        </div>
+
+        <div class="card">
+            <h3>Speech Analysis</h3>
+            <p id="speechStats">Analyzing...</p>
+        </div>
+    </div>
+
+    <div class="score-box">
+        <h2>Answer Evaluation Summary</h2>
+        <p id="answerSummary">Loading...</p>
+    </div>
+    <div class="score-box">
+    <h2>AI Interview Summary</h2>
+    <p id="aiSummary">Generating summary...</p>
+    </div>
+
+    <div id="detailedResults"></div>
+
+    <div class="btn-section">
+        <button onclick="restartInterview()">Take Interview Again</button>
+    </div>
+
+</div>
+
+<script src="report.js"></script>
+</body>
+</html>

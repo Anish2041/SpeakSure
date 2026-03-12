@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #dbeafe, #e9d5ff);
+}
+
+/* Header */
+.top-header {
+    background: linear-gradient(to right, #4f8dfd, #a855f7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.progress-line {
+    height: 6px;
+    background: rgba(255,255,255,0.3);
+    margin: 10px auto;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 66%;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Layout */
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.left-section, .right-section {
+    width: 45%;
+}
+
+/* Cards */
+.domain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.domain-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.domain-card:hover {
+    transform: scale(1.05);
+}
+
+.domain-card.selected {
+    border: 2px solid #6c63ff;
+}
+
+/* Difficulty */
+.difficulty label {
+    margin-right: 20px;
+}
+
+/* Modes */
+.mode-options {
+    margin-top: 20px;
+}
+
+.mode {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.mode.selected {
+    border: 2px solid #6c63ff;
+}
+
+/* Bottom */
+.bottom-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.score-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.start-btn {
+    background: linear-gradient(to right, #4f8dfd, #6c63ff);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+}

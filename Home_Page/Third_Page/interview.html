@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpeakSure AI - Mock Interview</title>
+    <link rel="stylesheet" href="interview.css">
+    <script src="face-api.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="top-header">
+        <div class="logo">🧠 SpeakSure AI</div>
+        <div class="step">
+            Step 3 of 3 - <b>Mock Interview In Progress</b>
+        </div>
+        <div id="timer">Time Left: 05:00</div>
+    </div>
+
+    <div class="main-container">
+
+        <!-- LEFT SIDE (Camera Section) -->
+        <div class="left-panel">
+            <div class="ai-interviewer">
+            <div id="aiLottie"></div>
+            </div>
+            <div class="camera-box">
+                <video id="webcam" autoplay playsinline></video>
+                <div class="confidence">
+                   🎤 Confidence: <span id="confidenceValue">62</span>%
+                </div>
+                <button id="toggleCamera" class="camera-btn">Turn Camera Off</button>
+                <button id="toggleMic" class="camera-btn"> Mute Mic</button>
+           
+            </div>
+        </div>
+
+        <!-- CENTER (Question Section) -->
+        <div class="center-panel">
+
+            <h2 id="interviewTitle">Loading Interview...</h2>
+
+            <div class="question-box">
+               <h3 id="questionHeading"></h3>
+                <p id="questionText"></p>
+            </div>
+            <button id="nextBtn">Next Question</button>
+
+            <div class="answer-mode-box">
+            <label><input type="radio" name="answerMode" value="type" checked> Type Answer</label>
+            <label><input type="radio" name="answerMode" value="speech"> Speak Answer</label>
+            </div>
+
+             <div class="answer-box">
+             <textarea id="answerInput" placeholder="Write your answer here..."></textarea>
+
+        <div id="speechControls" style="display:none;">
+        <button id="startSpeechBtn" type="button" class="camera-btn">Start Speaking</button>
+        <button id="stopSpeechBtn" type="button" class="camera-btn">Stop Speaking</button>
+
+        <div class="analysis">
+            <b>Live Speech Text:</b>
+            <div id="speechPreview"></div>
+         </div>
+        </div>
+    </div>
+
+            <button class="stop-btn">Stop Interview</button>
+
+        </div>
+
+        <!-- RIGHT SIDE (Real-Time Analysis) -->
+        <div class="right-panel">
+            <div class="analysis">
+            😐 Emotion: <span id="emotionText">Detecting...</span>
+            </div>
+            <canvas id="confidenceChart" height="150"></canvas>
+            <h3>Real-Time Analysis</h3>
+
+            <div class="analysis good">
+                👍 Great explanation! Clear step-by-step answer.
+            </div>
+
+            <div class="analysis warning">
+                🎤 Voice is slightly shaky. Try speaking confidently.
+            </div>
+
+            <div class="analysis tip">
+                💡 Coding Tip: Mention base case clearly.
+            </div>
+            <div class="analysis">
+            🎤 Voice Confidence Level
+            <div class="volume-bar">
+             <div id="volumeFill"></div>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+<script src="interview.js"></script>
+</body>
+</html>
